@@ -106,6 +106,7 @@ h2 span {
     top: 95px;
     left: -700px;
     max-width: 900px;
+     z-index: 40;
     animation: cloud3 140s linear infinite;
     animation-delay: 14s;
 
