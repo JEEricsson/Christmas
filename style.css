@@ -106,7 +106,6 @@ h2 span {
     top: 95px;
     left: -700px;
     max-width: 900px;
-    z-index: 30;
     animation: cloud3 140s linear infinite;
     animation-delay: 14s;
 
@@ -171,6 +170,26 @@ h2 span {
     100% {
         opacity: 0;
         z-index: 5;
+    }
+}
+
+
+
+.snowflake {
+    position: absolute;
+    top:0;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: fall linear infinite;
+    z-index: 100;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh) rotate(360deg);
     }
 }
 
